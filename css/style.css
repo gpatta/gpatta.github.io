@@ -1,0 +1,148 @@
+:root {
+    --main-bg-color: white;
+    --header-bg-color: #0f0f0f;
+    --header-hv-color: #272727;
+    --footer-bg-color: #0f0f0f;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--main-bg-color);
+    margin: 0;
+    height: 100vh;
+}
+
+.header {
+    background-color: var(--header-bg-color);
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0, .1);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.header .headerLogo {
+    float: left;
+    font-size: 25px;
+    margin: 12px 30px;
+
+    color: white;
+    text-decoration: none;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.header ul a {
+    display: block;
+    /* background-color: antiquewhite; */
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.header ul a:hover {
+    background-color: var(--header-hv-color);
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header .menu-icon {
+    padding: 30px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+    background-color: white;
+    display: block;
+    width: 20px;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+}
+
+.header .menu-icon .nav-icon::before, 
+.header .menu-icon .nav-icon::after {
+    background-color: white;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    transition: background-color .2s ease-out;
+    position: absolute;
+}
+.header .menu-icon .nav-icon::before {
+    top: 6px;
+}
+.header .menu-icon .nav-icon::after {
+    top: -6px;
+}
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: none;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background-color: var(--header-bg-color);
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+
+@media screen and (min-width: 48em) {
+    .header li {
+        float: left;
+    }
+
+    .header li a {
+        padding: 20px 30px;
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+}
+
+.mainContent {
+    min-height: calc(100vh - 180px);
+    padding: 80px 10% 100px 10%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: var(--footer-bg-color);
+    color: white;
+}
