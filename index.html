@@ -1,69 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto"
+    rel="stylesheet"
+  /> -->
 
-    <title>GPatta</title>
-    <meta name="author" content="GPatta" />
-    <meta name="keywords" content="GPatta" />
-    <meta name="description" content="GPatta landing page" />
-  </head>
-  <body>
-    <header class="header">
-      <a href="/" class="headerLogo">GPatta</a>
+  <title>Gabriele Pattarozzi</title>
+  <link href="/src/css/output.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/0e86b2a1a1.js" crossorigin="anonymous"></script>
+  
+  <!-- <meta name="author" content="" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" /> -->
 
-      <input type="checkbox" class="menu-btn" id="menu-btn" />
-      <label for="menu-btn" class="menu-icon">
-        <span class="nav-icon"></span>
-      </label>
+  <style>
+    html { scroll-behavior: smooth; }
+    body, html { height: 100%; }
+  </style>
 
-      <ul class="menu">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contacts">Contacts</a></li>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full shadow-md z-50 text-white bg-neutral-900 p-4 flex justify-between items-center">
+    <h1 class="text-xl font-mono">gpatta</h1>
+    <nav>
+        <ul class="flex space-x-4">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <!-- <li><a href="#about" class="hover:underline">About</a></li> -->
+            <li><a href="#projects" class="hover:underline">Projects</a></li>
+            <!-- <li><a href="#contacts" class="hover:underline">Contact</a></li> -->
+        </ul>
+    </nav>
+  </header>
+  
+  <!-- Main Layout -->
+  <div class="flex flex-col md:flex-row max-w-6xl mx-auto my-8 p-4 pt-20 gap-6">
+      
+    <!-- Sidebar -->
+    <aside class="bg-white p-4 shadow-lg rounded-lg md:w-1/4">
+      <img src="/assets/personal.png" alt="My Picture" class="w-32 h-32 rounded-full mx-auto mb-4">
+      <h2 class="text-lg font-semibold text-center">Gabriele Pattarozzi</h2>
+      <p class="text-gray-600 text-center">Computer Engineering Student @ University of Bologna.</p>
+      <h3 class="text-lg font-semibold mt-4">Contacts</h3>
+      <ul class="mt-4 space-y-2">
+        <li><a href="mailto:gpatta.dev@gmail.com" class="text-black hover:underline">
+          <i class="fa-solid fa-envelope ml-2 mr-2"></i> Email</a></li>
+        <li><a href="https://www.linkedin.com/in/gabriele-pattarozzi-57a576212" target="_blank" class="text-black hover:underline">
+          <i class="fa-brands fa-linkedin ml-2 mr-2"></i> LinkedIn</a></li>
+        <li><a href="https://github.com/gpatta" target="_blank" class="text-black hover:underline">
+          <i class="fa-brands fa-github ml-2 mr-2"></i> GitHub</a></li>
       </ul>
-    </header>
+    </aside>
+      
+    <!-- Main Content -->
+    <main class="bg-white p-6 shadow-lg rounded-lg flex-1">
+      <h2 class="text-2xl font-semibold mb-4">Hi, I'm Gabriele</h2>
+      <p class="text-gray-700">I'm a <b>Computer Engineering</b> student at the University of Bologna, Italy.
+        I've an <b>Electronics</b> backgound, and a strong passion for the <b>Motorsport</b> World.<br>
+        Here you can find some of my projects, as well as my contact info. Feel free to reach out to me!</p>
+      
+      <h2 id="projects" class="text-2xl font-semibold mt-4 mb-4">What I'm working on</h2>
+    
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
 
-    <main class="mainContent">
-      <h1>GPatta</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iste
-        eveniet excepturi? Quisquam neque laborum asperiores, ad quaerat
-        deleniti optio quis a porro mollitia eaque voluptatem voluptates
-        repudiandae dolorem voluptatibus amet dolor pariatur ipsam iste delectus
-        inventore fugiat. In, ullam atque earum reprehenderit voluptatibus at
-        cum, voluptatum blanditiis neque saepe laudantium cumque autem ut
-        incidunt ipsum! Perspiciatis tempore cumque asperiores sapiente aut
-        eligendi temporibus magni nobis esse obcaecati sint voluptates unde
-        iure, ut magnam natus blanditiis dignissimos, ratione qui? Aliquam
-        voluptas dolores harum, esse eligendi ab pariatur possimus, ducimus
-        recusandae repellat accusantium! Tempora minus aspernatur inventore amet
-        tenetur explicabo. A quaerat voluptatum nisi error nostrum quibusdam
-        alias at laudantium quae architecto repellendus aperiam, voluptas ex,
-        laborum, asperiores mollitia eos ipsa optio. Totam, doloremque?
-        Praesentium eius aspernatur enim? Placeat nobis consequuntur odit
-        impedit cupiditate, voluptatum ipsum totam vitae fugiat aspernatur?
-        Suscipit, quasi nisi accusantium illum, velit sint expedita minima,
-        ratione similique dolor harum nemo! Repellat dolore, exercitationem
-        eligendi fugit repudiandae molestiae recusandae ut provident tempora.
-        Sequi harum non quasi expedita repellat voluptatem numquam debitis
-        provident ex illo quas ad recusandae perferendis veritatis, minus
-        praesentium assumenda porro reprehenderit. Ut et suscipit totam id,
-        magni rem consequatur eos natus voluptates illum alias molestiae?
-      </p>
+        <!-- UBM Driverless -->
+        <div class="relative group bg-white shadow-lg rounded-lg overflow-hidden transform transition-all hover:scale-105">
+            <img src="/assets/f1tenth.png" alt="UniBo Motorsport logo" class="w-full max-w-[250px] h-auto object-contain mx-auto rounded-md">
+            <div class="p-4 flex flex-col flex-grow">
+                <h3 class="text-xl font-semibold">UBM Driverless</h3>
+                <p class="text-gray-600 flex-grow">UniBo Motorsport Driverless division member</p>
+                <p class="text-gray-600 mt-auto"><i class="fa-solid fa-calendar mr-2"></i> 2024-now</p>
+                <a href="https://github.com/ubm-driverless" target="_blank" class="text-blue-600 hover:underline mt-auto block">View details</a>
+            </div>
+        </div>
+
+        <!-- UBM Telemetry -->
+        <div class="relative group bg-white shadow-lg rounded-lg overflow-hidden transform transition-all hover:scale-105">
+          <img src="/assets/ubm.png" alt="UniBo Motorsport logo" class="w-full max-w-[250px] h-auto object-contain mx-auto">
+          <div class="p-4 flex flex-col flex-grow">
+              <h3 class="text-xl font-semibold">UBM Telemetry & Diagnostics</h3>
+              <p class="text-gray-600 flex-grow">UniBo Motorsport Electric - Telemetry & Diagnostics project manager</p>
+              <p class="text-gray-600 mt-auto"><i class="fa-solid fa-calendar mr-2"></i> 2024-now</p>
+              <!-- <a href="" target="_blank" class="text-blue-600 hover:underline mt-auto block">View details</a> -->
+          </div>
+        </div>
+
+        <!-- F1TENTH PDU -->
+        <div class="relative group bg-white shadow-lg rounded-lg overflow-hidden transform transition-all hover:scale-105">
+          <img src="/assets/pdu.png" alt="F1TENTH PDU image" class="w-full max-w-[250px] h-auto object-contain mx-auto">
+          <div class="p-4 flex flex-col flex-grow">
+              <h3 class="text-xl font-semibold">F1TENTH PDU</h3>
+              <p class="text-gray-600 flex-grow">Power Distribution Unit development for the F1TENTH competition's car</p>
+              <p class="text-gray-600 mt-auto"><i class="fa-solid fa-calendar mr-2"></i> 2024-now</p>
+              <!-- <a href="" target="_blank" class="text-blue-600 hover:underline mt-auto block">View details</a> -->
+          </div>
+        </div>
+
+      </div>
+      
+      <h2 class="text-2xl font-semibold mt-4 mb-4">Past projects</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+
+        <!-- ESACO Cloud Infrastructure -->
+        <div class="relative group bg-white shadow-lg rounded-lg overflow-hidden transform transition-all hover:scale-105">
+            <img src="/assets/esaco.png" alt="ESACO logo" class="w-full max-w-[250px] h-auto object-contain mx-auto">
+            <div class="p-4 flex flex-col flex-grow">
+                <h3 class="text-xl font-semibold">ESACO Cloud Infrastructure</h3>
+                <p class="text-gray-600 flex-grow">Edge-Cloud infrastructure for Alma Automotive's <a href="https://alma-automotive.it/it/electric-powertrain-predictive-diagnosis" target="_blank" class="text-blue-600 hover:underline">ESACO project</a></p>
+                <p class="text-gray-600 mt-auto"><i class="fa-solid fa-calendar mr-2"></i> 2024</p>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7282778076122406912" target="_blank" class="text-blue-600 hover:underline mt-auto block">View details</a>
+            </div>
+        </div>
+
+        <!-- Hackathon SICK -->
+        <div class="relative group bg-white shadow-lg rounded-lg overflow-hidden transform transition-all hover:scale-105">
+          <img src="/assets/hackathon24.png" alt="Idema 3d logo" class="w-full max-w-[250px] h-auto object-contain mx-auto">
+          <div class="p-4 flex flex-col flex-grow">
+              <h3 class="text-xl font-semibold">Gesture-guided Cobot</h3>
+              <p class="text-gray-600 flex-grow">Project implemented in 48h during SICK Hackathon 2024, using SICK sensors and an ABB cobot</p>
+              <p class="text-gray-600 mt-auto"><i class="fa-solid fa-calendar mr-2"></i> 2024</p>
+              <a href="https://github.com/ubm-sick-hackathon-24" target="_blank" class="text-blue-600 hover:underline mt-auto block">View details</a>
+          </div>
+        </div>
+
+        <!-- UniBo Motorsport Electric - Electronics Division Manager -->
+        <div class="relative group bg-white shadow-lg rounded-lg overflow-hidden transform transition-all hover:scale-105">
+          <img src="/assets/ubm.png" alt="UniBo Motorsport logo" class="w-full max-w-[250px] h-auto object-contain mx-auto">
+          <div class="p-4 flex flex-col flex-grow">
+              <h3 class="text-xl font-semibold">UBM Electronics</h3>
+              <p class="text-gray-600 flex-grow">UniBo Motorsport Electric - Electronics Division Manager</p>
+              <p class="text-gray-600 mt-auto"><i class="fa-solid fa-calendar mr-2"></i> 2023-2024</p>
+              <a href="https://motorsport.unibo.it/past-fsae-teams-prove/#2024%20TEAM" target="_blank" class="text-blue-600 hover:underline mt-auto block">View details</a>
+          </div>
+        </div>
+
+        <!-- IDeMa 3D -->
+        <div class="relative group bg-white shadow-lg rounded-lg overflow-hidden transform transition-all hover:scale-105">
+          <img src="/assets/idema3d.png" alt="Idema 3d logo" class="w-full max-w-[250px] h-auto object-contain mx-auto">
+          <div class="p-4 flex flex-col flex-grow">
+              <h3 class="text-xl font-semibold">IDeMa 3D</h3>
+              <p class="text-gray-600 flex-grow">Imagine, Design, Make. 3D models' brand.</p>
+              <p class="text-gray-600 mt-auto"><i class="fa-solid fa-calendar mr-2"></i> 2021</p>
+              <a href="https://gpatta.github.io/idema-3d" target="_blank" class="text-blue-600 hover:underline mt-auto block">View details</a>
+          </div>
+        </div>
+
+      </div>
     </main>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="bg-neutral-900 text-white text-center p-4 mt-6">
+      <p>&copy; 2025 Gabriele Pattarozzi. All Rights Reserved.</p>
+      <p class="p-2"><a href="https://github.com/gpatta" target="_blank" class="underline cursor-pointer">GitHub</a></p>
+  </footer>
 
-    <footer>
-      <p>Copyright 2023 &copy GPatta - All rights reserved</p>
-    </footer>
-  </body>
+</body>
 </html>
